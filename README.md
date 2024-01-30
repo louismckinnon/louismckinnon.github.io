@@ -1,6 +1,6 @@
 # Louis McKinnon
 
-![Your Name's Profile Picture](https://example.com/profile-picture.png)
+![Headshot]([https://example.com/profile-picture.png](https://github.com/mckinnol/mckinnol.github.io.wiki.git))
 
 ## Bio
 

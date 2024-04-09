@@ -6,21 +6,22 @@
     <title>Your Name - Homepage</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Century Gothic', 'Futura', sans-serif; /* These fonts echo the mid-century modern vibe */
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #fff0e1; /* Soft, earthy background color */
+            color: #6d665a; /* Muted, retro color for text */
         }
 
         .sticky-header {
+            background-color: #009688; /* Teal, popular in mid-century palettes */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            top: 0;
             position: -webkit-sticky;
             position: sticky;
-            top: 0;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
             z-index: 1000;
         }
 
@@ -30,35 +31,31 @@
             border-radius: 50%;
             object-fit: cover;
             display: block;
-            margin: 20px auto;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        img.headshot:hover {
-            transform: scale(1.1);
+            margin: 40px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
         .research-links {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px; /* Consistent space between cards */
             padding: 20px;
         }
 
         .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 10px;
+            background: #ffffff; /* Clean, white cards */
+            border: 1px solid #ccc; /* Subtle border */
+            border-radius: 5px; /* Slight rounding of corners for a softer look */
             padding: 20px;
-            width: 300px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            width: 280px; /* Fixed width for uniformity */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+            transition: transform 0.3s ease-in-out;
             text-align: center;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .card a {
@@ -68,7 +65,7 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #6d665a; /* A deeper shade for contrast */
             color: #fff;
             text-align: center;
             padding: 20px 0;

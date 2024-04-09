@@ -3,100 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Homepage</title>
-    <style>
-        body {
-            font-family: 'Century Gothic', 'Futura', sans-serif; /* These fonts echo the mid-century modern vibe */
-            margin: 0;
-            padding: 0;
-            background-color: #fff0e1; /* Soft, earthy background color */
-            color: #6d665a; /* Muted, retro color for text */
-        }
-
-        .sticky-header {
-            background-color: #009688; /* Teal, popular in mid-century palettes */
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            width: 100%;
-            top: 0;
-            position: -webkit-sticky;
-            position: sticky;
-            z-index: 1000;
-        }
-
-        img.headshot {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin: 40px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
-
-        .research-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px; /* Consistent space between cards */
-            padding: 20px;
-        }
-
-        .card {
-            background: #ffffff; /* Clean, white cards */
-            border: 1px solid #ccc; /* Subtle border */
-            border-radius: 5px; /* Slight rounding of corners for a softer look */
-            padding: 20px;
-            width: 280px; /* Fixed width for uniformity */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-            transition: transform 0.3s ease-in-out;
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #6d665a; /* A deeper shade for contrast */
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Researcher Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="sticky-header">
-    <h1>Your Name</h1>
-</div>
+<header id="header">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<img src="https://via.placeholder.com/150" alt="Headshot Placeholder" class="headshot">
+<section id="home">
+    <h1>Welcome</h1>
+    <p>This is a brief introduction about me.</p>
+</section>
 
-<div class="research-links">
-    <div class="card">
-        <a href="#link1">Research Project 1</a>
-    </div>
-    <div class="card">
-        <a href="#link2">Research Project 2</a>
-    </div>
-    <div class="card">
-        <a href="#link3">Research Project 3</a>
-    </div>
-    <!-- Add more cards as needed -->
-</div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Here's a detailed biography and academic background.</p>
+</section>
+
+<section id="research">
+    <h2>My Research</h2>
+    <p>Overview of ongoing research projects.</p>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <p>List of selected publications.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>How to get in touch with me.</p>
+</section>
 
 <footer>
-    <p>© 2024 Your Name. All rights reserved.</p>
+    <p>Copyright &copy; 2024 by Researcher Name</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

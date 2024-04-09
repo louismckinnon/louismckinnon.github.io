@@ -1,51 +1,88 @@
+/* Reset some default styles for a clean start */
 body, html {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, simple font */
+    background: #fff; /* Pure white background */
+    color: #333; /* Soft black for text */
+    line-height: 1.6; /* Improve readability */
 }
 
+/* Header with fixed positioning to stay at top */
 header {
-    background: #333;
-    color: #fff;
+    background: #fff; /* Match body background */
+    color: #333; /* Soft black for contrast */
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
+    border-bottom: 1px solid #ddd; /* Subtle separation from content */
+    padding: 20px 0; /* Adequate padding */
 }
 
+/* Navigation styling */
 header ul {
     list-style: none;
     padding: 0;
+    text-align: center; /* Center align nav items */
 }
 
 header ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px; /* Space out nav items */
 }
 
 header a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
+    transition: color 0.3s ease-in-out;
 }
 
+header a:hover {
+    color: #777; /* Subtle hover effect */
+}
+
+/* Each section takes full viewport height */
 section {
-    padding: 60px 20px;
-    min-height: 100vh;
+    padding: 80px 20px; /* Ample padding for readability */
+    min-height: calc(100vh - 60px); /* Adjust for header height */
+    box-sizing: border-box; /* Include padding in height calculation */
 }
 
+/* Subtle background differences for alternating sections */
 #home {
-    background: #f4f4f4;
+    background: #f9f9f9;
 }
 
 #about, #research, #publications, #contact {
-    background: #e9e9e9;
+    background: #fff;
 }
 
+/* Footer styling */
 footer {
-    background: #333;
-    color: #fff;
+    background: #f9f9f9;
+    color: #333;
     text-align: center;
     padding: 20px;
-    margin-top: -20px;
+    font-size: 0.8em; /* Smaller font for less emphasis */
+}
+
+/* Utility classes */
+.container {
+    width: 80%;
+    margin: auto; /* Center content */
+    max-width: 1000px; /* Max width for large screens */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    header ul li {
+        display: block; /* Stack nav items */
+        margin: 10px 0; /* Adjust spacing */
+    }
+
+    .container {
+        width: 90%; /* Increase width on smaller screens */
+    }
 }

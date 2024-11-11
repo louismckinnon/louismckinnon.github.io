@@ -19,6 +19,10 @@ header {
     /*border-radius: 50%;  Optional: makes the image circular */
 }
 
+a.cv-link {
+    color: blue;
+    text-decoration: underline;
+}
 
 header nav ul {
     list-style: none;

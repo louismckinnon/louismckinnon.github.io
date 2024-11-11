@@ -48,15 +48,11 @@ h1, h2 {
     color: #003366;
 }
 
-contact {
-    padding-bottom: 40px; /* Adjust this value as needed */
-    margin-bottom: 40px;
-}
-
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
+    padding-top: 40px;
     padding: 1rem 0;
     position: fixed;
     bottom: 0;

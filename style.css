@@ -12,6 +12,14 @@ header {
     padding: 1rem 0;
 }
 
+.headshot {
+    float: right;
+    width: 150px; /* Adjust width as needed */
+    margin: 0 0 10px 10px; /* Adds space around the image */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+
 header nav ul {
     list-style: none;
     padding: 0;

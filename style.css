@@ -48,6 +48,11 @@ h1, h2 {
     color: #003366;
 }
 
+#contact {
+    padding-bottom: 60px; /* Adjust this value as needed */
+    margin-bottom: 60px;  /* This helps ensure space above the footer */
+}
+
 footer {
     background-color: #003366;
     color: white;

@@ -48,18 +48,19 @@ h1, h2 {
     color: #003366;
 }
 
-#contact {
-    padding-bottom: 60px; /* Adjust this value as needed */
-    margin-bottom: 60px;  /* This helps ensure space above the footer */
+main {
+    margin-bottom: 60px; /* Adjust this value to control space above the footer */
 }
 
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 60px 0 1rem 0; /* Top padding: 40px, bottom padding: 1rem, left and right padding: 0 */
+    padding: 1rem 0;
+    padding-top: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 10;
 }
 

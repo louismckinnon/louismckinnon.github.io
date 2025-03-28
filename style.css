@@ -2,7 +2,7 @@ body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #e7ecef;
+    background-color: #E7ECEF;
     color: #333;
     min-height: 100vh; /* Ensures footer stays at the bottom of the content */
     position: relative;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #274c77; /* Dark blue */
+    background-color: #274C77; /* Dark blue */
     color: #ffffff;
     padding: 1rem 0;
 }
@@ -39,7 +39,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #e7ecef;
+    color: #E7ECEF;
     text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ section {
 }
 
 h1, h2 {
-    color: #003366;
+    color: #274C77;
 }
 
 main {
@@ -56,8 +56,8 @@ main {
 }
 
 footer {
-    background-color: #274c77;
-    color:  #e7ecef;
+    background-color: #274C77;
+    color:  #E7ECEF;
     text-align: center;
     padding: 1rem 0;
     padding-top: 20px;

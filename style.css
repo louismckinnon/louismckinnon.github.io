@@ -17,8 +17,8 @@ header {
 
 .headshot {
     float: right;
-    width: 500px; /* Adjust width as needed */
-    margin: 0 0 50px 100px; /* Adds space around the image */
+    width: 250px; /* Adjust width as needed */
+    margin: 0 150px 50px 50px; /* Adds space around the image */
     /*border-radius: 50%;  Optional: makes the image circular */
 }
 

@@ -2,7 +2,7 @@ body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #E7ECEF;
+    background-color: #ffffff;
     color: #333;
     min-height: 100vh; /* Ensures footer stays at the bottom of the content */
     position: relative;
@@ -18,7 +18,7 @@ header {
 .headshot {
     float: right;
     width: 500px; /* Adjust width as needed */
-    margin: 0 0 50px 50px; /* Adds space around the image */
+    margin: 0 0 50px 100px; /* Adds space around the image */
     /*border-radius: 50%;  Optional: makes the image circular */
 }
 
@@ -39,7 +39,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #E7ECEF;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ main {
 
 footer {
     background-color: #274C77;
-    color:  #E7ECEF;
+    color:  #ffffff;
     text-align: center;
     padding: 1rem 0;
     padding-top: 20px;

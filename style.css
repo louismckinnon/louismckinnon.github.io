@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #6581a3; /* Dark blue */
+    background-color: #87bba2; /* Dark blue */
     color: #ffffff;
     padding: 1rem 0;
 }
@@ -56,7 +56,7 @@ main {
 }
 
 footer {
-    background-color: #003366;
+    background-color: #87bba2;
     color: white;
     text-align: center;
     padding: 1rem 0;

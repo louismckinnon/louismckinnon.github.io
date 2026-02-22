@@ -1,132 +1,138 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333;
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 60px;
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fff;
+    padding: 3.5rem 1.5rem 5rem;
 }
 
-header {
-    background-color: #274C77;
-    color: #ffffff;
-    padding: 1rem 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.95em;
-    letter-spacing: 0.02em;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    max-width: 860px;
+.page {
+    max-width: 680px;
     margin: 0 auto;
-    padding: 2rem 2rem 3rem 2rem;
-    margin-bottom: 60px;
 }
 
-h1 {
-    color: #274C77;
-    margin-bottom: 0.2rem;
-    font-size: 1.9em;
+/* ── Header ── */
+
+.site-header {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
 }
 
-h2 {
-    color: #274C77;
-    border-bottom: 1px solid #c8d6e5;
-    padding-bottom: 0.3rem;
-    margin-top: 2.5rem;
-    font-size: 1.2em;
-    letter-spacing: 0.01em;
+.site-header h1 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    color: #111;
+    margin-bottom: 0.35rem;
 }
 
 .pronunciation {
     font-style: italic;
-    color: #999;
-    font-size: 0.55em;
+    color: #bbb;
+    font-size: 0.52em;
     font-weight: normal;
 }
 
 .position {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+}
+
+nav {
+    font-size: 0.88rem;
+}
+
+nav a {
     color: #555;
-    font-size: 1.0em;
-    margin-top: 0.4rem;
-    margin-bottom: 1.2rem;
+    text-decoration: none;
 }
 
-.research-interests {
-    background-color: #f4f7fb;
-    border-left: 3px solid #274C77;
-    padding: 0.65rem 1rem;
-    margin: 0 0 1.5rem 0;
-    font-size: 0.95em;
-    color: #444;
-}
-
-.headshot {
-    float: right;
-    width: 200px;
-    margin: 0.3rem 0 1.5rem 2rem;
-    border-radius: 3px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-}
-
-section {
-    padding: 0;
-}
-
-.paper-list {
-    padding-left: 1.5rem;
-    margin: 0.8rem 0 0 0;
-}
-
-.paper-list li {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-a {
-    color: #274C77;
-}
-
-a.cv-link {
-    color: #274C77;
+nav a:hover {
+    color: #111;
     text-decoration: underline;
 }
 
-a.cv-link:hover {
-    color: #1a3352;
+.sep {
+    color: #ccc;
+    margin: 0 0.35rem;
 }
 
+/* ── Headshot ── */
+
+.headshot {
+    float: right;
+    width: 165px;
+    margin: 0.15rem 0 1.5rem 2.2rem;
+}
+
+/* ── About section ── */
+
+.research-interests {
+    font-size: 0.92rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ── Section headings ── */
+
+h2 {
+    font-size: 0.75rem;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: 3rem;
+    margin-bottom: 1.1rem;
+}
+
+/* ── Paper list ── */
+
+.paper-list {
+    list-style: none;
+    padding: 0;
+}
+
+.paper-list li {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #eee;
+}
+
+/* ── Links ── */
+
+a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    text-decoration-color: #1a1a1a;
+}
+
+/* ── Footer ── */
+
 footer {
-    background-color: #274C77;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9em;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.82rem;
+    color: #bbb;
 }

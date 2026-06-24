@@ -5,16 +5,16 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
     font-size: 16px;
     line-height: 1.75;
-    color: #1a1a1a;
-    background: #fff;
+    color: #111827;
+    background: #F8F9FA;
     padding: 3.5rem 1.5rem 5rem;
 }
 
 .page {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto;
 }
 
@@ -23,64 +23,97 @@ body {
 .site-header {
     margin-bottom: 3rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #E2E8F0;
 }
 
 .site-header h1 {
-    font-size: 1.75rem;
-    font-weight: normal;
-    color: #111;
-    margin-bottom: 0.35rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
 }
 
 .pronunciation {
+    font-family: 'Source Serif 4', Georgia, serif;
     font-style: italic;
-    color: #bbb;
-    font-size: 0.52em;
-    font-weight: normal;
+    color: #94A3B8;
+    font-size: 0.44em;
+    font-weight: 400;
 }
 
 .position {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 0.9rem;
+    font-size: 0.88rem;
+    color: #94A3B8;
     line-height: 1.5;
+    margin-bottom: 0;
 }
 
+/* ── Research metadata panel ── */
+
+.research-meta {
+    font-family: 'Space Mono', 'Courier New', monospace;
+    font-size: 0.7rem;
+    line-height: 1.85;
+    border-left: 2px solid #E2E8F0;
+    padding: 0.65rem 0 0.65rem 0.9rem;
+    margin: 1.1rem 0 1.4rem;
+}
+
+.meta-row {
+    display: flex;
+    align-items: baseline;
+}
+
+.meta-label {
+    color: #1E5A96;
+    min-width: 5.5rem;
+    flex-shrink: 0;
+}
+
+.meta-value {
+    color: #94A3B8;
+}
+
+/* ── Nav ── */
+
 nav {
-    font-size: 0.88rem;
+    font-size: 0.87rem;
 }
 
 nav a {
-    color: #555;
+    color: #94A3B8;
     text-decoration: none;
+    transition: color 0.15s;
 }
 
-nav a:hover {
-    color: #111;
-    text-decoration: underline;
+nav a:hover,
+nav a.active {
+    color: #1E5A96;
 }
 
 .sep {
-    color: #ccc;
-    margin: 0 0.35rem;
+    color: #E2E8F0;
+    margin: 0 0.4rem;
 }
 
 /* ── Headshot ── */
 
 .headshot {
     float: right;
-    width: 165px;
+    width: 158px;
     margin: 0.15rem 0 1.5rem 2.2rem;
+    border: 1px solid #E2E8F0;
 }
 
 /* ── About section ── */
 
 .research-interests {
-    font-size: 0.92rem;
-    color: #666;
+    font-size: 0.88rem;
+    color: #94A3B8;
     margin-bottom: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 p {
@@ -90,13 +123,24 @@ p {
 /* ── Section headings ── */
 
 h2 {
-    font-size: 0.75rem;
-    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 0.7rem;
+    font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #999;
-    margin-top: 3rem;
-    margin-bottom: 1.1rem;
+    color: #94A3B8;
+    margin-top: 3.25rem;
+    margin-bottom: 1.25rem;
+}
+
+h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #E2E8F0;
 }
 
 /* ── Paper list ── */
@@ -107,32 +151,60 @@ h2 {
 }
 
 .paper-list li {
-    font-size: 0.95rem;
+    font-size: 0.93rem;
     line-height: 1.65;
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
     padding-left: 1rem;
-    border-left: 2px solid #eee;
+    border-left: 2px solid #E2E8F0;
 }
 
 /* ── Links ── */
 
 a {
-    color: #1a1a1a;
+    color: #111827;
     text-decoration: underline;
-    text-decoration-color: #ccc;
+    text-decoration-color: #E2E8F0;
     text-underline-offset: 2px;
+    transition: text-decoration-color 0.15s;
 }
 
 a:hover {
-    text-decoration-color: #1a1a1a;
+    text-decoration-color: #1E5A96;
 }
 
 /* ── Footer ── */
 
 footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #ddd;
-    font-size: 0.82rem;
-    color: #bbb;
+    margin-top: 4.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #E2E8F0;
+    font-size: 0.8rem;
+    color: #94A3B8;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 560px) {
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .headshot {
+        width: 120px;
+        margin-left: 1.5rem;
+    }
+
+    .meta-row {
+        flex-direction: column;
+    }
+
+    .meta-label {
+        min-width: unset;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
 }

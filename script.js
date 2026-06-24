@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav ul li a");
+    const navLinks = document.querySelectorAll("nav a");
 
     window.addEventListener("scroll", () => {
         let current = "";
@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        navLinks.forEach((li) => {
-            li.classList.remove("active");
-            if (li.getAttribute("href").includes(current)) {
-                li.classList.add("active");
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
             }
         });
     });
